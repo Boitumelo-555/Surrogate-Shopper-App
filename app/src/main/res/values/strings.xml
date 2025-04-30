@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Surrogate Shopper</string>
+    <string name="view_requests">View Requests</string>
+    <string name="create_request">Create Request</string>
+    <string name="profile">Profile</string>
+    <string name="thank_you_messages">Thank You Messages</string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="requester">Requester</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="requester_name">Requester Name</string>
+    <string name="notes_about_request">Notes about request</string>
+    <string name="enter_request_notes">Enter request notes</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="available_shopping_requests">Available Shopping Requests</string>
+    <string name="request">Submit Request</string>
+    <string name="write_your_thank_you_message_here">Write your thank you message here</string>
+    <string name="send_thank_you">Send Thank You</string>
+    <string name="request_title">Request Title</string>
+    <string name="request_description">Request Description</string>
+    <string name="claim_request">Claim Request</string>
+    <string name="item_name">Item Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="request_description_goes_here">Request description goes here.</string>
+    <string name="items">Items:</string>
+    <string name="send_message">Send Message</string>
+    <string name="write_your_thank_you_message">Write your thank you message</string>
+    <string name="volunteer_id">Volunteer ID</string>
+</resources>
