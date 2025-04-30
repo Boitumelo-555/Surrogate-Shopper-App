@@ -32,5 +32,10 @@ public class LoginActivity extends AppCompatActivity {
                 ApiClient.login(LoginActivity.this, email, password);
             }
         });
+
+        Button backBtn = findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(v -> {
+            finish();
+        });
     }
 }
