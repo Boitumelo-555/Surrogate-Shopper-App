@@ -38,5 +38,10 @@ public class RegisterActivity extends AppCompatActivity {
                 ApiClient.register(RegisterActivity.this, name, email, password, role);
             }
         });
+
+        Button backBtn = findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(v -> {
+            finish();
+        });
     }
 }
