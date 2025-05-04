@@ -1,7 +1,9 @@
 package com.example.surrogateshopper;
 
 import android.os.Bundle;
+import android.content.Intent;
 import android.widget.Button;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,5 +39,9 @@ public class LoginActivity extends AppCompatActivity {
         backBtn.setOnClickListener(v -> {
             finish();
         });
+    }
+    public void onForgotPasswordClick(View view) {
+        Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+        startActivity(intent);
     }
 }
