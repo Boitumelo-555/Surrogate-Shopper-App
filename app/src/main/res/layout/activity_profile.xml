@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/profileLayout"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:padding="20dp">
 
-    <TextView
-        android:id="@+id/profileText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is your Profile!"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-</LinearLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/This_is_your_profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/phoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Phone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/addressField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColorHint="#8D6E63"
+            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/bioField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Bio"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="10dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/updateProfileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Update_profile"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
